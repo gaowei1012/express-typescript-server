@@ -1,0 +1,727 @@
+{
+  "canvas": {
+    "version": "2.2.11",
+    "width": 6000,
+    "height": 6000,
+    "scrollTop": -120,
+    "scrollLeft": -2069.40625,
+    "zoomLevel": 1,
+    "show": {
+      "tableComment": true,
+      "columnComment": true,
+      "columnDataType": true,
+      "columnDefault": true,
+      "columnAutoIncrement": true,
+      "columnPrimaryKey": true,
+      "columnUnique": true,
+      "columnNotNull": true,
+      "relationship": true
+    },
+    "database": "MySQL",
+    "databaseName": "db_tender",
+    "canvasType": "ERD",
+    "language": "GraphQL",
+    "tableCase": "pascalCase",
+    "columnCase": "pascalCase",
+    "highlightTheme": "VS2015",
+    "bracketType": "none",
+    "setting": {
+      "relationshipDataTypeSync": true,
+      "relationshipOptimization": false,
+      "columnOrder": [
+        "columnName",
+        "columnDataType",
+        "columnNotNull",
+        "columnUnique",
+        "columnAutoIncrement",
+        "columnDefault",
+        "columnComment"
+      ]
+    },
+    "pluginSerializationMap": {}
+  },
+  "table": {
+    "tables": [
+      {
+        "name": "user_profile",
+        "comment": "用户信息表",
+        "columns": [
+          {
+            "name": "user_profile_id",
+            "comment": "用户信息id",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 87.2744140625,
+              "widthComment": 64.1181640625,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "52ecea4c-4e50-40b7-beeb-d25723fde3ce"
+          },
+          {
+            "name": "user_id",
+            "comment": "用户id",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "a9d420f9-a657-46ae-abe1-34f0f2781608"
+          },
+          {
+            "name": "avartar_url",
+            "comment": "头像",
+            "dataType": "VARCHAR(256)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 64.13720703125,
+              "widthComment": 60,
+              "widthDataType": 94.955078125,
+              "widthDefault": 60
+            },
+            "id": "cad47f64-e428-45b7-96c7-f48f941b3ec1"
+          },
+          {
+            "name": "phone",
+            "comment": "",
+            "dataType": "VARCHAR(64)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 87.72509765625,
+              "widthDefault": 60
+            },
+            "id": "77aa91aa-36ff-48bc-b517-bdf1a7092e4e"
+          },
+          {
+            "name": "createdAt",
+            "comment": "创建时间",
+            "dataType": "DATETIME",
+            "default": "CURRENT_TIMESTAMP",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 66.76513671875,
+              "widthDefault": 147.65966796875
+            },
+            "id": "f7f26990-0708-4aa8-8b1a-4064bda4f580"
+          },
+          {
+            "name": "updatedAt",
+            "comment": "更新时间",
+            "dataType": "DATETIME",
+            "default": "CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 61.2744140625,
+              "widthComment": 60,
+              "widthDataType": 66.76513671875,
+              "widthDefault": 375.42626953125
+            },
+            "id": "bcd011cc-c797-4a3e-a936-34f73d428752"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 699.5559,
+          "top": 814.6665,
+          "zIndex": 1,
+          "widthName": 69.92626953125,
+          "widthComment": 67
+        },
+        "visible": true,
+        "id": "bf75118f-eacc-447c-85ef-8a00456f34ec"
+      },
+      {
+        "name": "announcements",
+        "comment": "通告表",
+        "columns": [
+          {
+            "name": "announcement_id",
+            "comment": "通告id",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 105.35888671875,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "c848ceb0-cd56-4999-b083-c7109364cb24"
+          },
+          {
+            "name": "title",
+            "comment": "标题",
+            "dataType": "VARCHAR(256)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 94.955078125,
+              "widthDefault": 60
+            },
+            "id": "235b64b0-375f-4a22-8a4b-9ee5c78f7725"
+          },
+          {
+            "name": "description",
+            "comment": "描述",
+            "dataType": "LONG",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 64.8671875,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "8ab69957-ab59-42a9-a44e-54c24350c616"
+          },
+          {
+            "name": "content",
+            "comment": "内容",
+            "dataType": "LONGTEXT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 72.0654296875,
+              "widthDefault": 60
+            },
+            "id": "a7579874-d717-49b1-9993-46a141407ae2"
+          },
+          {
+            "name": "cover",
+            "comment": "封面图片",
+            "dataType": "VARCHAR(500)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 94.955078125,
+              "widthDefault": 60
+            },
+            "id": "f60f6ddf-1365-4de6-a43f-fb0ab0d01744"
+          },
+          {
+            "name": "publisher_org_id",
+            "comment": "发布者组织机构id",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 98.12255859375,
+              "widthComment": 103.1181640625,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "80d0e1b2-c2f4-44e9-80b4-f499894aec68"
+          },
+          {
+            "name": "views",
+            "comment": "浏览数",
+            "dataType": "INT",
+            "default": "0",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "fe497d83-bcb6-4dab-b9ed-cb7383aa8c9c"
+          },
+          {
+            "name": "audit_state",
+            "comment": "通告审核状态(0待审核，1审核中，2通过，3未通过)",
+            "dataType": "ENUM(0,1,2,3)",
+            "default": "0",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 65.603515625,
+              "widthComment": 120,
+              "widthDataType": 88.68994140625,
+              "widthDefault": 60
+            },
+            "id": "fdf163be-ca3c-426f-9ff3-1cf598d5d132"
+          },
+          {
+            "name": "freeze",
+            "comment": "通告状态(0冻结，1未冻结)",
+            "dataType": "ENUM(0,1)",
+            "default": "1",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 120,
+              "widthDataType": 67.00634765625,
+              "widthDefault": 60
+            },
+            "id": "0475943d-ca3f-44c7-9607-901e23bed24f"
+          },
+          {
+            "name": "createdBy",
+            "comment": "创建者id",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60.53173828125,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "967c5bb9-4c12-47df-8d4f-d9bba7070886"
+          },
+          {
+            "name": "createdAt",
+            "comment": "创建时间",
+            "dataType": "DATETIME",
+            "default": "CURRENT_TIMESTAMP",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 66.76513671875,
+              "widthDefault": 147.65966796875
+            },
+            "id": "f04ba53f-71c5-498d-9c84-4bc7bd999ed2"
+          },
+          {
+            "name": "updatedAt",
+            "comment": "更新时间",
+            "dataType": "DATETIME",
+            "default": "CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 61.2744140625,
+              "widthComment": 60,
+              "widthDataType": 66.76513671875,
+              "widthDefault": 375.42626953125
+            },
+            "id": "12cc08ec-529d-4b07-b144-87f94d3bf190"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 2098.3933,
+          "top": 256,
+          "zIndex": 2,
+          "widthName": 94.5107421875,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "a586736c-49f8-4005-8bbb-835dcfc79cdc"
+      },
+      {
+        "name": "announcement_target",
+        "comment": "通告目标表（通告目标人群）",
+        "columns": [
+          {
+            "name": "a_target_id",
+            "comment": "通告目标项id",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 67.05078125,
+              "widthComment": 77.1181640625,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "76403246-1ee8-4536-b39c-8cb764156518"
+          },
+          {
+            "name": "announcement_id",
+            "comment": "通告id",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 105.35888671875,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "5c91b995-7d59-4b2d-8690-20fa68673536"
+          },
+          {
+            "name": "org_id",
+            "comment": "通告目标组织id(与用户管理微服务中组织机构表保持一致)",
+            "dataType": "LONGTEXT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 120,
+              "widthDataType": 72.0654296875,
+              "widthDefault": 60
+            },
+            "id": "22bde670-cc71-47b7-aa37-3c54bb0e27bd"
+          },
+          {
+            "name": "roles",
+            "comment": "指定接收通告的角色",
+            "dataType": "LONGTEXT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 119,
+              "widthDataType": 72.0654296875,
+              "widthDefault": 60
+            },
+            "id": "43e62893-ce83-4705-aa60-ac86b4778cc0"
+          },
+          {
+            "name": "user_id",
+            "comment": "指定接收通告的用户id",
+            "dataType": "LONGTEXT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 120,
+              "widthDataType": 72.0654296875,
+              "widthDefault": 60
+            },
+            "id": "3cd3afd4-42d6-4963-9b5a-b4a6b5d3d656"
+          },
+          {
+            "name": "query",
+            "comment": "特征查询条件",
+            "dataType": "LONGTEXT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 80,
+              "widthDataType": 72.0654296875,
+              "widthDefault": 60
+            },
+            "id": "baf054be-cb2a-4c51-bb74-d11a76563ac8"
+          },
+          {
+            "name": "createdAt",
+            "comment": "创建时间",
+            "dataType": "DATETIME",
+            "default": "CURRENT_TIMESTAMP",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 66.76513671875,
+              "widthDefault": 147.65966796875
+            },
+            "id": "44c26338-05e6-4cf0-a784-8741e8f3983f"
+          },
+          {
+            "name": "updatedAt",
+            "comment": "更新时间",
+            "dataType": "DATETIME",
+            "default": "CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 61.2744140625,
+              "widthComment": 60,
+              "widthDataType": 66.76513671875,
+              "widthDefault": 375.42626953125
+            },
+            "id": "61549b59-973e-4d59-9ea6-e07f9429fb35"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 3071.7266,
+          "top": 292,
+          "zIndex": 3,
+          "widthName": 128.4833984375,
+          "widthComment": 120
+        },
+        "visible": true,
+        "id": "dd9581cc-51f8-4a52-8332-1132232677e6"
+      }
+    ],
+    "indexes": []
+  },
+  "memo": {
+    "memos": []
+  },
+  "relationship": {
+    "relationships": [
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "a586736c-49f8-4005-8bbb-835dcfc79cdc",
+          "columnIds": [
+            "c848ceb0-cd56-4999-b083-c7109364cb24"
+          ],
+          "x": 2948.133534375,
+          "y": 413.5,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "dd9581cc-51f8-4a52-8332-1132232677e6",
+          "columnIds": [
+            "5c91b995-7d59-4b2d-8690-20fa68673536"
+          ],
+          "x": 3071.7266,
+          "y": 408.5,
+          "direction": "left"
+        },
+        "constraintName": "fk_questionaire_to_questionary_target",
+        "visible": true,
+        "id": "678c203e-9f07-4bec-9573-4c387c2df66e"
+      }
+    ]
+  }
+}
