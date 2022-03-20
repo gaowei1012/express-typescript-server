@@ -13,9 +13,10 @@ if (process.env.NODE_ENV === "docker") {
 } else {
   redisLocalServer = {
     redisPort: 27812,
-    // redisHost: '127.0.0.1',
-    redisHost: "sh-crs-hehe9ijl.sql.tencentcdb.com",
-    redispwd: "qwd920224",
+    redisHost: "127.0.0.1",
+    // redisHost: "sh-crs-hehe9ijl.sql.tencentcdb.com",
+    // redispwd: "qwd920224",
+    redispwd: "",
     ...options,
   };
 }

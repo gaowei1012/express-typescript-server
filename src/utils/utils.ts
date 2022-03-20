@@ -1,10 +1,9 @@
 /*
  Utils functions used by API server methods
 */
-import { errorCode } from '@/config';
 // 获取n位随机数
 export function getRandom(n) {
-  var num = '';
+  var num = "";
   for (var i = 0; i < n; i++) {
     num += Math.floor(Math.random() * 10);
   }
@@ -14,7 +13,7 @@ export function getRandom(n) {
 //生成主键id（三位随机数+当前时间戳）
 export function getGuid() {
   var length = 3;
-  var num = '';
+  var num = "";
   for (var i = 0; i < length; i++) {
     num += Math.floor(Math.random() * 10);
   }
@@ -28,7 +27,7 @@ export function failRes(statusCode, message) {
     success: false,
     statusCode: statusCode,
     message: message,
-    data: '',
+    data: "",
   });
   return resBody;
 }
@@ -39,7 +38,7 @@ export function resSuccess(message, data) {
     success: true,
     statusCode: 200,
     message: message,
-    data: data ? data : '',
+    data: data ? data : "",
   });
   return resBody;
 }
